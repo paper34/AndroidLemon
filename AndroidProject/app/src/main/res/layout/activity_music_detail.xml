@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".MusicDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/Back"
+            android:layout_width="124dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:background="#000000"
+            android:drawableLeft="@drawable/image_customise"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/Youtube"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+
+            android:layout_marginLeft="170dp"
+            android:background="#000000"
+            android:drawableLeft="@drawable/youtube"
+            android:text="Button" />
+    </LinearLayout>
+
+
+    <com.example.androidproject.RoundImageView
+        android:id="@+id/AlbumImg"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/background_rounding"
+        android:src="@drawable/ea6345acc53bb8cbac3564f661ae9dd4"
+
+        />
+    // 하단 음악정보 네비
+
+    <SeekBar
+        android:id="@+id/pbMP3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp">
+
+    </SeekBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Prev"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:drawableRight="@android:drawable/ic_media_previous"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/Play"
+            android:layout_width="36dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:drawableBottom="@android:drawable/ic_media_play"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/Next"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:drawableLeft="@android:drawable/ic_media_next"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

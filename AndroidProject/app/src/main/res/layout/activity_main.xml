@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".Home">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="20dp"
+        android:text="Lemon"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="28dp" />
+
+
+        <Button
+            android:id="@+id/GoodNight"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:onClick="onClick"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:background="#3F3F42"
+            android:text="굿나잇"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="6"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/listViewMP3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8B8B8B"></ListView>
+    </LinearLayout>
+
+
+    // 하단 음악정보 네비
+
+    <SeekBar
+        android:id="@+id/pbMP3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </SeekBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMP3"
+                android:layout_width="207dp"
+                android:layout_height="25dp"
+                android:background="#292828"
+                android:gravity="left"
+                android:text="음악정보"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="207dp"
+                android:layout_height="25dp"
+                android:background="#292828"
+                android:gravity="left"
+                android:text="진행시간"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Prev"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#292828"
+            android:drawableLeft="@android:drawable/ic_media_previous"
+            android:gravity="left"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/Play"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#292828"
+            android:drawableLeft="@android:drawable/ic_media_play"
+            android:gravity="left"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/Stop"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#292828"
+            android:drawableLeft="@android:drawable/ic_media_pause"
+            android:gravity="left"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/Next"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#292828"
+            android:drawableLeft="@android:drawable/ic_media_next"
+            android:gravity="left"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:text="홈"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:text="추천"
+            android:textColor="#FFFFFF" />
+
+
+        <Button
+            android:id="@+id/my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:text="MY"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+
+</LinearLayout>
